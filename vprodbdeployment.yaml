@@ -4,7 +4,7 @@ metadata:
   name: vprodb
   labels:
     app: vprodb
-specs: 
+spec: 
   selector:
     matchLabels:
       app: vprodb
@@ -13,7 +13,7 @@ specs:
     metadata:
       labels:
         app: vprodb
-    specs:
+    spec:
       containers:
         - name: vprodb
           image: vprofile/vprofiledb:v1
@@ -30,7 +30,7 @@ specs:
                   name: app-secret
                   key: db-pass
       nodeSelector: 
-        zone: us-east-2a
+        zone: us-east-1a
       volumes:
         - name: vpro-db-data
           awsElasticBlockStore:
