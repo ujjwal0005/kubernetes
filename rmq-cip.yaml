@@ -9,4 +9,4 @@ spec:
   - port: 5672
     targetPort: vpromq01-port
     protocol: TCP
-type: ClusterIP 
+  type: ClusterIP 
