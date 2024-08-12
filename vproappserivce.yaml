@@ -4,7 +4,7 @@ metadata:
   name: vproapp-service
 spec:
   selector:
-    app: vproapp-service
+    app: vproapp
   ports:
     - port: 80
       targetPort: vproapp-port
